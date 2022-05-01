@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Crud medicação</title>
+</head>
+<body>
 
+    <div id="parallelogram"></div>
+
+    <section>
+        <form action="#" method="GET">
+            <h1>Cadastro de Medicamentos</h1>
+        
+            <fieldset>
+                <div class = "container">
+                    <input type ="text" id="comercial" autofocus  disabled="true">
+                    <label>Nome Comercial</label>
+                 </div>
+
+                 <div class = "container">
+                    <input type ="text" id="cientifico" disabled="true">
+                    <label>Nome Cientifico</label>
+                 </div>
+                 <div class = "container">
+                    <input type ="text" id="laboratorio" disabled="true">
+                    <label>Laboratorio</label>
+                 </div>
+            </fieldset>
+
+            <fieldset>
+                <div class = "container">
+                    <input type="number" id="quantidade" disabled="true">
+                    <label>Quantidade</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+            <select id="seletor"disabled="true">
+                <option value="Uso Oral">Uso Oral</option>
+                <option value="Uso Nasal">Uso Nasal</option>
+                <option value="Uso Topico">Uso Topico</option>
+                <option value="Uso Dermatologico">Uso Dermatologico</option>
+            </select>
+            </fieldset>
+        </div><br>
+
+        <div id="divNavegar">
+         <button  id="btPrimeiro" >Primeiro</button>
+         <button  id="btProximo" >Proximo</button>
+         <button  id="btAnterior" >Anterior</button>
+         <button  id="btUltimo" >Ultimo </button>
+     </div>
+     <div id="divComando">
+        <button  id="btIncluir" >Incluir</button>
+        <button  id="btExcluir" >Excluir</button>
+        <button  id="btAlterar" >Alterar</button>
+        <button  id="btSair" >Sair</button>
+    </div>
+    <div id="divAviso">
+    </div>
+          <div id="divDialogo" hidden>
+         <button  id="btOk" >Ok</button>
+         <button  id="btCancelar" >Cancelar</button>
+         </div>
+
+        </form>
+    </section>
+
+    <script src="./CtrlSessao.js" type="module"></script>
+
+
+</body>
+</html>
